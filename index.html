@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Universal Converter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <section class="card">
+      <div class="header">
+        <h1>Universal Converter</h1>
+      </div>
+
+      <div class="converter">
+        <div class="input-group">
+          <label for="category">Kategori</label>
+          <select id="category"></select>
+        </div>
+
+        <div class="input-group">
+          <label for="amount">Miktar</label>
+          <input id="amount" type="number" inputmode="decimal" placeholder="0" value="1" />
+        </div>
+
+        <div class="swap-row">
+          <div class="select-group">
+            <label for="fromUnit">Kaynak</label>
+            <select id="fromUnit"></select>
+          </div>
+
+          <button id="swapBtn" class="swap-btn" type="button" aria-label="Birimleri değiştir">
+            ⇄
+          </button>
+
+          <div class="select-group">
+            <label for="toUnit">Hedef</label>
+            <select id="toUnit"></select>
+          </div>
+        </div>
+
+        <div class="result-box">
+          <span class="result-label">Sonuç</span>
+          <div id="result" class="result-value">0</div>
+          <div id="meta" class="result-meta">Hazır</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
